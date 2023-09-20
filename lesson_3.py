@@ -63,3 +63,5 @@ for i in range(len(num_list) - 1):
         count += 1
 
 print(count)
+
+res_num_list = [num_list[i + 1] for i in range(len(num_list) - 1) if num_list[i] < num_list[i + 1]]
