@@ -85,6 +85,6 @@ def print_nums(num: int):
     if num == 0:
         return ''
     line = input('Введите число: ')
-    return print_nums(num - 1) + line
+    return print_nums(num - 1) + line + " "
 
-print(print_nums(n))
+print(print_nums(n).strip())
