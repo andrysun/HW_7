@@ -19,13 +19,15 @@ print(*list)
 
 from random import randint as rnd
 
+def new_list(array, min, max):
+    array_1 = [i for i in range(0, len(array)) if min < array[i] < max]
+    return array_1
 
 minimum = int(input('Введите минимальное число диапозона поиска: '))
 maximum = int(input('Введите максимальное число диапозона поиска: '))
 list = [rnd(1, 50) for _ in range(1, 10)]
-list_new = []
-for i in range(len(list)):
-    if minimum < list[i] < maximum:
-        list_new.append(i)
+
+list_new = new_list(list, minimum, maximum)
+
 print(f'{len(list)} elements in {list}')
 print(list_new)
