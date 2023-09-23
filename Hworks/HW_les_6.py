@@ -8,7 +8,7 @@
 '''
 
 def arif_prog(array: list[int], a_1: int, d: int, n: int) -> list[int]:
-    array = [a_1 + i * d for i in range(n)]
+    array = [a_1 + i * d for i in range(n)] #list(range(a1, a1 + d * n , d))
     return array
 
 first_element = int(input('Введите первый член арифм. прогрессии: '))
